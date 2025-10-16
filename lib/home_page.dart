@@ -5,6 +5,6 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column();
+    return Column(children: [Container(color: Colors.red)]);
   }
 }
