@@ -2,56 +2,56 @@ import 'package:flutter/material.dart';
 
 class AppTextStyles {
   // HEADINGS
-  static const TextStyle h1Bold = TextStyle(
+  static const h1Bold = TextStyle(
     fontFamily: 'OpenSans',
     fontSize: 22,
     fontWeight: FontWeight.w700,
     color: Colors.black,
   );
 
-  static const TextStyle h2Bold = TextStyle(
+  static const h2Bold = TextStyle(
     fontFamily: 'OpenSans',
     fontSize: 20,
     fontWeight: FontWeight.w700,
     color: Colors.black,
   );
 
-  static const TextStyle h3Bold = TextStyle(
+  static const h3Bold = TextStyle(
     fontFamily: 'OpenSans',
     fontSize: 18,
     fontWeight: FontWeight.w700,
     color: Colors.black,
   );
 
-  static const TextStyle h4SemiBold = TextStyle(
+  static const h4SemiBold = TextStyle(
     fontFamily: 'OpenSans',
     fontSize: 16,
     fontWeight: FontWeight.w600,
     color: Colors.black,
   );
 
-  static const TextStyle h5SemiBold = TextStyle(
+  static const h5SemiBold = TextStyle(
     fontFamily: 'OpenSans',
     fontSize: 14,
     fontWeight: FontWeight.w600,
     color: Colors.black,
   );
 
-  static const TextStyle h6SemiBold = TextStyle(
+  static const h6SemiBold = TextStyle(
     fontFamily: 'OpenSans',
     fontSize: 12,
     fontWeight: FontWeight.w600,
     color: Colors.black,
   );
 
-  static const TextStyle h7Bold = TextStyle(
+  static const h7Bold = TextStyle(
     fontFamily: 'OpenSans',
     fontSize: 16,
     fontWeight: FontWeight.w700,
     color: Colors.black,
   );
 
-  static const TextStyle h8Medium = TextStyle(
+  static const h8Medium = TextStyle(
     fontFamily: 'OpenSans',
     fontSize: 14,
     fontWeight: FontWeight.w500,
@@ -59,21 +59,21 @@ class AppTextStyles {
   );
 
   // BODY TEXT
-  static const TextStyle bodyRegular = TextStyle(
+  static const bodyRegular = TextStyle(
     fontFamily: 'OpenSans',
     fontSize: 14,
     fontWeight: FontWeight.w400,
     color: Colors.black,
   );
 
-  static const TextStyle bodySmall = TextStyle(
+  static const bodySmall = TextStyle(
     fontFamily: 'OpenSans',
     fontSize: 12,
     fontWeight: FontWeight.w400,
     color: Colors.black,
   );
 
-  static const TextStyle bodyLarge = TextStyle(
+  static const bodyLarge = TextStyle(
     fontFamily: 'OpenSans',
     fontSize: 16,
     fontWeight: FontWeight.w400,
@@ -81,21 +81,21 @@ class AppTextStyles {
   );
 
   // SF PRO TEXT
-  static const TextStyle sfSemiBold = TextStyle(
+  static const sfSemiBold = TextStyle(
     fontFamily: 'SFPROTEXT',
     fontSize: 14,
     fontWeight: FontWeight.w600,
     color: Colors.black,
   );
 
-  static const TextStyle sfMedium = TextStyle(
+  static const sfMedium = TextStyle(
     fontFamily: 'SFPROTEXT',
     fontSize: 13,
     fontWeight: FontWeight.w500,
     color: Colors.black,
   );
 
-  static const TextStyle sfRegular = TextStyle(
+  static const sfRegular = TextStyle(
     fontFamily: 'SFPROTEXT',
     fontSize: 13,
     fontWeight: FontWeight.w400,
