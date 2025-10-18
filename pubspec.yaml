@@ -69,7 +69,40 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
-
+  assets:
+    - assets/icons/
+    - assets/image/
+  fonts:
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/static/OpenSans-Regular.ttf
+        - asset: assets/fonts/static/OpenSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/static/OpenSans-Italic.ttf
+          style: italic
+        - asset: assets/fonts/static/OpenSans-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: assets/fonts/static/OpenSans-Light.ttf
+          weight: 300
+        - asset: assets/fonts/static/OpenSans-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: assets/fonts/static/OpenSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/static/OpenSans-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/static/OpenSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/static/OpenSans-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/static/OpenSans-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/static/OpenSans-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

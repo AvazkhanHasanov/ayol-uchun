@@ -1,0 +1,44 @@
+class AppIcons {
+  static const  apple = 'assets/icons/apple.svg';
+  static const  arrowRight = 'assets/icons/arrow-right.svg';
+  static const  arrowBack = 'assets/icons/arrow_back.svg';
+  static const  arrowDown = 'assets/icons/arrow_down.svg';
+  static const  bigClock = 'assets/icons/big_clock.svg';
+  static const  bigWarning = 'assets/icons/big_warning.svg';
+  static const  calendar = 'assets/icons/calendar.svg';
+  static const  cash = 'assets/icons/cash.svg';
+  static const  cash2 = 'assets/icons/cash2.svg';
+  static const  check1 = 'assets/icons/check1.svg';
+  static const  circleCheck = 'assets/icons/circle_check.svg';
+  static const  clock = 'assets/icons/clock.svg';
+  static const  clock2 = 'assets/icons/clock2.svg';
+  static const  dangerTriangle = 'assets/icons/danger_triangle.svg';
+  static const  edit = 'assets/icons/edit.svg';
+  static const  email = 'assets/icons/email.svg';
+  static const  eye = 'assets/icons/eye.svg';
+  static const  eye2 = 'assets/icons/eye2.svg';
+  static const  fileCertificate = 'assets/icons/file_certificate.svg';
+  static const  filter = 'assets/icons/filter.svg';
+  static const  google = 'assets/icons/google.svg';
+  static const  home = 'assets/icons/home.svg';
+  static const  infoCircle = 'assets/icons/info_circle.svg';
+  static const  location = 'assets/icons/location.svg';
+  static const  location2 = 'assets/icons/location2.svg';
+  static const  lock = 'assets/icons/lock.svg';
+  static const  logout = 'assets/icons/logout.svg';
+  static const  megaphone = 'assets/icons/megaphone.svg';
+  static const  message = 'assets/icons/message.svg';
+  static const  more = 'assets/icons/more.svg';
+  static const  news = 'assets/icons/news.svg';
+  static const  phone = 'assets/icons/phone.svg';
+  static const  remove = 'assets/icons/remove.svg';
+  static const  reply2 = 'assets/icons/reply 2.svg';
+  static const  sandWatch = 'assets/icons/sand_watch.svg';
+  static const  search = 'assets/icons/search.svg';
+  static const  security = 'assets/icons/security.svg';
+  static const  share = 'assets/icons/share.svg';
+  static const  star = 'assets/icons/star.svg';
+  static const  successIcon = 'assets/icons/success_icon.svg';
+  static const  threeDots = 'assets/icons/three_dots.svg';
+}
+

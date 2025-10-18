@@ -1,3 +1,4 @@
+import 'package:ayol_uchun/core/utils/app_theme.dart';
 import 'package:ayol_uchun/features/home/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -16,13 +17,12 @@ class AyolUchun extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiRepositoryProvider(
       providers: dependencies,
-      child: MultiBlocProvider(
-        providers: blocDependencies,
-        child: ScreenUtilInit(
-          designSize: Size(375, 812),
-          builder: (context, child) => MaterialApp.router(
-            routerConfig: router,
-          ),
+      child: ScreenUtilInit(
+        designSize: Size(375, 812),
+        builder: (context, child) => MaterialApp.router(
+          theme: AppTheme().lightTheme,
+          themeMode: ThemeMode.light,
+          routerConfig: router,
         ),
       ),
     );
