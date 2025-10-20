@@ -1,35 +1,36 @@
-import 'package:ayol_uchun/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import '../../../core/utils/colors.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:ayol_uchun/core/utils/styles.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppTextFormField extends StatelessWidget {
   const AppTextFormField({
+    this.filledColor = AppColors.white,
     required this.controller,
     required this.hintText,
-    this.needIcon = false,
     this.readOnly = false,
     this.inputFormatter,
-    required this.icon,
     this.keyboardType,
     this.width = 341,
     this.validator,
     this.onChanged,
+    this.suffix,
     this.prefix,
     this.label,
     this.onTap,
     super.key,
   });
 
-  final String icon;
   final double width;
   final bool readOnly;
   final String? label;
-  final bool needIcon;
-  final Widget? prefix;
+  final String? suffix;
+
+  final String? prefix;
   final String hintText;
+  final Color filledColor;
   final VoidCallback? onTap;
   final TextInputType? keyboardType;
   final void Function(String)? onChanged;
@@ -48,34 +49,48 @@ class AppTextFormField extends StatelessWidget {
         SizedBox(
           width: width.w,
           child: TextFormField(
-            onTap: onTap,
+            onTap:
+                onTap ??
+                () {
+                  if (readOnly) FocusScope.of(context).unfocus();
+                },
             readOnly: readOnly,
             onChanged: onChanged,
             validator: validator,
-            cursorColor: AppColors.grey,
-            keyboardType: keyboardType,
             controller: controller,
+            keyboardType: keyboardType,
+            cursorColor: AppColors.grey,
             inputFormatters: inputFormatter,
             decoration: InputDecoration(
-              prefix: prefix,
+              filled: true,
+              fillColor: AppColors.white,
+              prefixIcon: prefix != null
+                  ? Padding(
+                      padding: EdgeInsets.only(left: 12.w),
+                      child: SvgPicture.asset(prefix!, width: 24.r, height: 24.r),
+                    )
+                  : null,
               prefixIconConstraints: BoxConstraints.loose(Size(double.infinity, double.infinity)),
               suffixIconConstraints: BoxConstraints.loose(Size(double.infinity, double.infinity)),
-              suffixIcon: needIcon
+              suffixIcon: suffix != null
                   ? Padding(
-                      padding: EdgeInsets.only(right: 12),
-                      child: SvgPicture.asset(icon, width: 24.r, height: 24.r),
+                      padding: EdgeInsets.only(right: 12.w),
+                      child: SvgPicture.asset(suffix!, width: 24.r, height: 24.r),
                     )
-                  : SizedBox.shrink(),
+                  : null,
               hintStyle: AppTextStyles.bodyRegular.copyWith(color: AppColors.textLight),
               hintText: hintText,
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10.r),
+                borderSide: BorderSide(color: AppColors.white),
               ),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10.r),
+                borderSide: BorderSide(color: AppColors.white),
               ),
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10.r),
+                borderSide: BorderSide(color: AppColors.white),
               ),
             ),
           ),
