@@ -1,11 +1,11 @@
 import 'package:ayol_uchun/core/utils/result.dart';
 import '../../../core/client.dart';
-import '../../models/accommodation_list_model.dart';
-import '../../models/accommodation_retrieve_model.dart';
-import '../../models/activity_retrieve.dart';
-import '../../models/day_retrieve.dart';
-import '../../models/package_list.dart';
-import '../../models/package_retrieve.dart';
+import '../../models/packages/accommodation_list_model.dart';
+import '../../models/packages/accommodation_retrieve_model.dart';
+import '../../models/packages/activity_retrieve.dart';
+import '../../models/packages/day_retrieve.dart';
+import '../../models/packages/package_list.dart';
+import '../../models/packages/package_retrieve.dart';
 
 class ApiRepository {
   final ApiClient _apiClient;

@@ -1,4 +1,4 @@
-import 'package:ayol_uchun/data/models/plan_in_package_list.dart';
+import 'package:ayol_uchun/data/models/packages/plan_in_package_list.dart';
 import 'destination_in_package_list.dart';
 import 'feature_nested_list.dart';
 

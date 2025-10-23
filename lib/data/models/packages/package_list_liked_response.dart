@@ -1,4 +1,4 @@
-import 'package:ayol_uchun/data/models/package_list.dart';
+import 'package:ayol_uchun/data/models/packages/package_list.dart';
 
 class PackageListLikedResponse {
   final int count;

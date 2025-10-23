@@ -1,5 +1,5 @@
-import 'package:ayol_uchun/data/models/pictureIn_package_retrieve.dart';
-import 'package:ayol_uchun/data/models/planIn_package_retrieve.dart';
+import 'package:ayol_uchun/data/models/packages/pictureIn_package_retrieve.dart';
+import 'package:ayol_uchun/data/models/packages/planIn_package_retrieve.dart';
 
 import 'dayIn_package_retrieve.dart';
 import 'destinationIn_package_retrieve.dart';

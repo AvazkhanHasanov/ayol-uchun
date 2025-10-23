@@ -1,4 +1,4 @@
-import 'package:ayol_uchun/data/models/plan_typeIn_plan_retrieve.dart';
+import 'package:ayol_uchun/data/models/packages/plan_typeIn_plan_retrieve.dart';
 
 import 'feature_nested_retrieve.dart';
 
