@@ -1,4 +1,4 @@
-import 'package:ayol_uchun/data/models/plan_type.dart';
+import 'package:ayol_uchun/data/models/packages/plan_type.dart';
 
 class PlanInOrder {
   final int id;
